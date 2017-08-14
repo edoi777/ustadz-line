@@ -26,13 +26,19 @@ app.post('/webhook', line.middleware(config), (req, res) => {
 
 // event handler
 function handleEvent(event) {
+  const answere = "";
   if (event.type !== 'message' || event.message.type !== 'text') {
     // ignore non-text-message event
+    const message = event.message;
+    if (message.type === 'text' && message.text == 'assalamulaikum'){
+      answere = "wa'alaykum sallam";
+    }
     return Promise.resolve(null);
   }
 
   // create a echoing text message
-  const echo = { type: 'text', text: event.message.text };
+  const echo = { type: 'text', text: answere };
+  // client.pushMessage(userId, { type: 'text', text: answere });
 
   // use reply API
   return client.replyMessage(event.replyToken, echo);
