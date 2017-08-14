@@ -41,13 +41,11 @@ function handleEvent(event) {
 }
 
 function salam(type, message){
-  const answer = "";
   if (type === 'text' && message == 'assalaammualaikum'){
-      answer = "wa'alaykum sallam";
+      return "wa'alaykum sallam";
   } else {
-      answer = "Maaf Saya tidak mengerti maksud Antum/i";
+      return "Maaf Saya tidak mengerti maksud Antum/i";
   }
-  return answer;
 }
 
 // listen on port
