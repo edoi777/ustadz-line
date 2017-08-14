@@ -1,0 +1,29 @@
+{
+  "name": "ustadz-line",
+  "version": "1.0.0",
+  "description": "Ustadz-line is API used for automate Line Chat user.",
+  "main": "main.js",
+  "dependencies": {
+    "@line/bot-sdk": "^2.0.0",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ustadz/ustadz-line.git"
+  },
+  "keywords": [
+    "Ustaz-line",
+    "chat",
+    "bot"
+  ],
+  "author": "Irsyad & Vaksi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ustadz/ustadz-line/issues"
+  },
+  "homepage": "https://github.com/ustadz/ustadz-line#readme"
+}
